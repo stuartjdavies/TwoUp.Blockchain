@@ -79,8 +79,7 @@ contract Twoup {
     }
 
     function tossCoin() private view returns (bool) {
-        return true;
-        //return ((uint(keccak256(block.difficulty, now, players)) % 2) == 0);
+        return ((uint(keccak256(block.difficulty, now, players.length)) % 2) == 0);
     }
 
     function pickWinner() public 

@@ -9,17 +9,17 @@ let twoUp;
 let accounts;
 
 beforeEach(async () => {
-  accounts = await web3.eth.getAccounts();
+   //accounts = await web3.eth.getAccounts();
 
-  console.log(interface.twoUpFactory);
+  //console.log(interface.twoUpFactory);
 
-  //twoUp = new web3.eth.Contract(JSON.parse(interface));
+  // twoUp = await new web3.eth.Contract(JSON.parse(interface));
   
-                            //.deploy({ data: bytecode });
-                            // .send({ from: accounts[0], 
-                            //         gas: '1000000' });
+  //                           .deploy({ data: bytecode });
+  //                           .send({ from: accounts[0], 
+  //                                   gas: '1000000' });
 
-  //console.log(twoUp);
+  console.log(twoUp);
 });
 
 describe('Twoup Contract', () => {
